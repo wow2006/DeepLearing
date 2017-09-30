@@ -1,0 +1,98 @@
+{
+  "AlexNet": [
+    {
+      "conv_2d": {
+        "nb_filter": 96,
+        "filter_size": 11,
+        "strides": 4,
+        "activation": "relu",
+        "scope": "conv1"
+      } 
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 3,
+        "strides": 2
+      }
+    },
+    {
+      "local_response_normalization": {}
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 5,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv2"
+      } 
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 3,
+        "strides": 2
+      }
+    },
+    {
+      "local_response_normalization": {}
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 384,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 384,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 3,
+        "strides": 2
+      }
+    },
+    {
+        "local_response_normalization": {}
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "tanh"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "tanh"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,814 @@
+{
+  "VGG": {
+    "VGG11": [
+    {
+      "conv_2d": {
+        "nb_filter": 64,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv1"
+      } 
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 128,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv2"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv6"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv7"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv8"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "relu"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "relu"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    }
+    ],
+    "VGG13": [
+    {
+      "conv_2d": {
+        "nb_filter": 64,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv1_1"
+      } 
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 64,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv1_2"
+      } 
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 128,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv2_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 128,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv2_2"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_2"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_2"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_2"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "relu"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "relu"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    }
+    ],
+    "VGG16": [
+    {
+      "conv_2d": {
+        "nb_filter": 64,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv1_1"
+      } 
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 64,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv1_2"
+      } 
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 128,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv2_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 128,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv2_2"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_2"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_3"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_2"
+      }
+    },
+    {
+        "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_3"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_2"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_3"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "relu"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "relu"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    }
+    ],
+    "VGG16_1": [
+    {
+      "conv_2d": {
+        "nb_filter": 64,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv1_1"
+      } 
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 64,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv1_2"
+      } 
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 128,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv2_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 128,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv2_2"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_2"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 1,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_3"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_2"
+      }
+    },
+    {
+        "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 1,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_3"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_2"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 1,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_3"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "relu"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "relu"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    }
+    ],
+    "VGG19": [
+    {
+      "conv_2d": {
+        "nb_filter": 64,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv1_1"
+      } 
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 64,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv1_2"
+      } 
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 128,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv2_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 128,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv2_2"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_2"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_3"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 256,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv3_4"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_2"
+      }
+    },
+    {
+        "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_3"
+      }
+    },
+    {
+        "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv4_4"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_1"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_2"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_3"
+      }
+    },
+    {
+      "conv_2d": {
+        "nb_filter": 512,
+        "filter_size": 3,
+        "strides": 1,
+        "activation": "relu",
+        "scope": "conv5_4"
+      }
+    },
+    {
+      "max_pool_2d": {
+        "kernel_size": 2,
+        "strides": 2
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "relu"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    },
+    {
+      "fully_connected": {
+        "n_units": 4096,
+        "activation": "relu"
+      }
+    },
+    {
+      "dropout": {
+        "keep_prob": 0.5
+      }
+    }
+    ]
+  }
+}
